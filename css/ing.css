@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+*{margin: 0px; padding: 0px;}
+ol,ul,li{list-style: none;}
+a{text-decoration: none;}
+
+body{
+  width: 414px;
+  margin: 0px auto;
+}
+
+/* ------------------헤더 영역----------------------- */
+header{
+  height: 50px;
+  background-color: #980000;
+  position: relative;
+}
+
+header .h_bar{
+  position: absolute;
+  top: 12px; left: 10px;
+  color: #fff;
+  font-size: 25px;
+}
+
+header .h_user{
+  position: absolute;
+  top: 12px; right: 10px;
+  color: #fff;
+  font-size: 25px;
+}
+
+header h2{
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+  padding-top: 12px;
+}
+
+
+/* ---------------메인영역-----------------------*/
+
+.exhibitions{
+}
+.exhibitions h2{
+  font-size: 20px;
+  text-align: center;
+  margin: 15px;
+}
+
+.now_exhi{
+  display: flex;
+  flex-wrap: wrap;
+  overflow:hidden;
+}
+.now_exhi > li{
+  width: 200px;
+  height: 350px;
+  color: #333;
+  font-size: 12px;
+  line-height: 18px;
+  margin: 3px;
+  margin-bottom: -30px;
+  position: relative;
+}
+.now_exhi img{
+  width: 200px; height: 230px;
+}
+.now_exhi > li > span{
+  display: block;
+}
+.now_exhi > li > p{
+  text-align: right;
+  position: absolute;
+  transform: translateY(-24px);
+  right: 5px;
+}
+
+.button{
+  width: 77px; height: 24px;
+  font-size: 11px;
+  padding:3px 10px; 
+  border: none;
+  transition: 0.2s;
+  background: #980000;
+  color: #fff;
+  text-decoration: none;
+}
+
+.button:hover{
+  color: #fff;
+  background: #333;
+}
+
+/* ----------------푸터 영역 --------------------- */
+
+
+.f_bar{
+  height: 60px;
+  background-color: #292929;
+  display: flex; 
+  justify-content: space-around;
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+}
+
+.f_bar li{
+  color: #fff;
+  display: block;
+  text-align: center;
+  font-size: 25px;
+  padding-top: 5px;
+  list-style: none;
+}
+
+.f_bar li a{
+  text-decoration: none;
+  color:#fff;
+  display: block;
+  height: 50px;
+}
+
+.f_bar li span{
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  padding-top: 7px;
+}

@@ -1,0 +1,214 @@
+@charset "utf-8";
+
+*{margin: 0px; padding: 0px;}
+ol,ul,li{list-style: none;}
+a{text-decoration: none;}
+
+body{
+  width: 414px;
+  margin: 0px auto;
+}
+
+
+/* ------------------헤더 영역----------------------- */
+header{
+  height: 50px;
+  background-color: #980000;
+  position: relative;
+}
+
+header .fa-angle-left{
+  position: absolute;
+  top: 12px; left: 10px;
+  color: #fff;
+  font-size: 25px;
+}
+
+
+
+header h2{
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+  padding-top: 12px;
+}
+
+
+/* -----------------메인영역--------------------- */
+
+.s_login{}
+.s_login h2{
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.login01{
+  position: relative;
+  text-align: center;
+}
+.login01 legend{
+  display: none;
+}
+
+.login01 #id{
+  width: 310px; height: 35px;
+  border: none;
+  background-color: #ccc;
+  border-radius: 15px;
+  text-indent: 60px;
+  color: #333;
+  margin-bottom: 20px;
+}
+.login01 #pw{
+  width: 310px; height: 35px;
+  border: none;
+  background-color: #ccc;
+  border-radius: 15px;
+  text-indent: 60px;
+  color: #333;
+  margin-bottom: 20px;
+}
+.login01 .id_user{
+  display: block;
+  position: absolute;
+  top: 9px; left: 70px;
+  font-size: 20px;
+}
+.login01 .pw_user{
+  display: block;
+  position: absolute;
+  top: 62px; left: 70px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.login01 div{
+  width: 310px; height: 35px;
+  margin: 0px auto;
+  border: none;
+  background-color: #980000;
+  border-radius: 15px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.login01 div > a{
+  width: 310px; height: 35px;
+  line-height: 35px;
+  margin: 0px auto;
+  border: none;
+  background-color: #980000;
+  border-radius: 15px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.login01 p{
+  font-size: 14px;   
+  cursor: pointer;
+}
+
+.login02{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.login02 > li:first-child, .login02 > li:nth-child(2), .login02 > li:nth-child(3), .login02 > li:last-child{
+  width: 310px; height: 35px;
+  line-height: 35px;
+  text-align: center;
+  color: #fff;
+  margin: 15px auto;
+  border-radius: 15px;
+  cursor: pointer;
+} 
+
+.login02 a{
+  width: 310px; height: 35px;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  line-height: 35px;
+
+}
+.login02 > li:first-child{background-color: #2db400;}
+.login02 > li:nth-child(2){background-color: #f9e000;}
+.login02 > li:nth-child(3){background-color: #3b5998;}
+.login02 > li:last-child{
+  background-color: #2e2e2e;
+  margin-top: 40px !important;
+  margin-bottom: 100px;
+}
+
+
+
+
+/* ---------------푸터영역----------------- */
+
+.f_up{
+  height: 71px;
+  background-color: #dedede; 
+  position: relative;
+}
+
+address{
+  font-size: 12px;
+  color: #333;
+  line-height: 20px;
+  padding-top: 15px;
+  margin-left: 10px;
+}
+
+address p:last-child{
+  position: absolute;
+  right: 10px;
+  top: 13px;
+}
+
+.sns{
+  display:flex;
+  position: absolute;
+  right: 10px; bottom: 15px;
+  font-size: 20px;
+}
+
+.sns li:first-child, li:nth-child(2), li.last-child{padding-right: 10px;}
+
+
+.f_bar{
+  height: 60px;
+  background-color: #292929;
+  display: flex; 
+  justify-content: space-around;
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+}
+
+.f_bar li{
+  color: #fff;
+  display: block;
+  text-align: center;
+  font-size: 25px;
+  padding-top: 5px;
+  list-style: none;
+}
+
+.f_bar li a{
+  text-decoration: none;
+  color:#fff;
+  height: 50px;
+}
+
+.f_bar li span{
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  padding-top: 7px;
+}

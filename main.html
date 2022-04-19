@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fi-ar</title>
+  <!--  파비콘 이미지 삽입하기 -->
+  <link rel="shortcut icon" type="image/x-icon" href="./img/fi_ar_logo_ZQc_icon.ico" >
+  <!-- 초기화 -->
+  <link href="./css/reset.css" rel="stylesheet" type="text/css">
+  <!-- 메인콘텐츠에 적용되는 서식 -->
+  <link href="./css/main.css" rel="stylesheet" type="text/css">
+  <!-- 아이콘 폰트 연결 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   <!-- 공급업체 접두사 자동으로 작성해주는 스크립트 -->
+  <script src="./script/prefixfree.min.js"></script>
+  <!-- 스와이퍼 제이쿼리 -->
+  <script src="./script/swiper.js"></script>
+  <!-- 스와이퍼 슬라이드 서식 -->
+  <link href="./css/swiper.css" rel="stylesheet" type="text/css">
+    <!-- 제이쿼리 라이브러리 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- 제이쿼리 쿠키파일 -->
+  <script src="./script/jquery.cookie.js"></script>
+</head>
+
+
+
+
+<body>
+  <input type ="checkbox" id="ch">
+  <input type="checkbox" id="toggle">
+
+  <div id="wrap">
+  <!-- 상단배너 -->
+  <div class="banner">
+    <img src="./img/banner.gif" alt="상단배너">
+    <label for="ch"><i class="fas fa-times banner_close"></i></label>
+  </div>
+
+  <!-- 헤더영역 -->
+  <header>
+    <h2>Fi-ar</h2>  
+    
+    <label for="toggle">
+      <i class="fas fa-bars h_bar"></i>
+    </label>
+
+  <!-- 내비게이션 전체메뉴 -->
+  <nav class="navi">
+    
+
+  <!-- 2단 내비게이션 시작 -->
+    <ul class="gnb">
+      <label for="toggle">
+        <i class="fas fa-times gnb_close"></i>
+      </label>
+      <li>
+        <label for="mnu01"><a href="main.html" title="">홈</a></label>
+        <input type="checkbox" id="mnu01">
+      </li>
+      <li>
+        <label for="mnu02">진행중전시회<i class="fas fa-angle-down"></i></label>
+        <input type="checkbox" id="mnu02">
+        <ul class="sub">
+          <li><a href="ing.html" title="">인기순 보기</a></li>
+          <li><a href="ing.html" title="">일정순 보기</a></li>
+        </ul>
+      </li>
+      <li>
+        <label for="mnu03">가격별 전시회<i class="fas fa-angle-down"></i></label>
+        <input type="checkbox" id="mnu03">
+        <ul class="sub">
+          <li><a href="price.html" title="">무료 전시회</a></li>
+          <li><a href="price.html" title="">1만원대 전시회</a></li>
+          <li><a href="price.html" title="">2만원대 전시회</a></li>
+          <li><a href="price.html" title="">3만원대이상 전시회</a></li>
+        </ul>
+      </li>
+      <li>
+        <label for="mnu04">내주변 전시회<i class="fas fa-angle-down"></i></label>
+        <input type="checkbox" id="mnu04">
+        <ul class="sub">
+          <li><a href="location.html" title="">현재 위치 검색</a></li>
+          <li><a href="location.html" title="">지역 검색</a></li>
+        </ul>
+      </li>
+      <li>
+        <label for="mnu05">마이페이지<i class="fas fa-angle-down"></i></label>
+        <input type="checkbox" id="mnu05">
+        <ul class="sub">
+          <li><a href="user.html" title="">스크랩함</a></li>
+          <li><a href="user.html" title="">즐겨찾기</a></li>
+          <li><a href="user.html" title="">전시회 일기</a></li>
+          <li><a href="user.html" title="">설정</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+    
+  <a href="login.html" title="로그인"><i class="fas fa-user h_user"></i></a>
+  </header>
+  
+  <!-- 메인영역 -->
+  <main>
+    <section class="s_01">
+      <h2>사유의 방</h2>
+      <img src="./img/img01.jpg" alt="사유의방">
+      <span>화제의 전시!<br>국립중앙박물관</span>
+      <p><a href="#" title="상세보기" class="button">상세보기</a></p>
+    </section>
+
+    <section class="s_02">
+      <h2>진행중 전시회를 확인하세요</h2>
+      <div class="swiper s_02_slide">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <!-- 전시회목록 -->
+            <ul>
+              <li>
+                <img src="./img/img03.jpg" alt="전시회1"><p>우연히 웨스 앤더슨</p>
+              </li>
+              <li>
+                <img src="./img/img04.jpg" alt="전시회2"><p>투탕카멘-파라오의 비밀</p>
+              </li>
+            </ul>
+          </div>
+          <div class="swiper-slide">
+            <!-- 전시회목록2 -->
+            <ul>
+              <li>
+                <img src="./img/img05.jpg" alt="전시회3"><p>살바로드 달리전</p>
+              </li>
+              <li>
+                <img src="./img/img06.gif" alt="전시회4"><p>어둠속의 대화</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="swiper-pagination dot"></div>
+      </div>
+
+ 
+      
+    </section>
+
+    <section class="s_03">
+      <div class="s_03_left">
+        <h2>필립 할스만<br>JUMPING AGAIN</h2>
+        <P>긍정적인 에너지와<br>도전정신으로 탄생한<br>필립 할스만 사진이 주는 메세지</P>
+        <p><a href="#" title="상세보기" class="button">상세보기</a></p>
+      </div>
+      <img src="./img/img07.jpg" alt="점핑어게인">
+    </section>
+
+    <section class="s_04">
+      <img src="./img/img11.jpg" alt="이건희 컬렉션">
+      <h2>MMCA 이건희 컬렉션 특별전: 한국미술명작</h2>
+    </section>
+
+    <section class="s_05">
+      <h2>학고재 갤러리 - 무료전시회</h2>
+      <img src="./img/img09.jpg" alt="학고재갤러리">
+      <p>안드레아스 에릭슨: 해안선</p>
+      <p>2022-02-16 ~ 2022-020</p>
+      <p><a href="#" title="바로가기" class="button">바로가기</a></p>
+    </section>
+
+  </main>
+
+  <!-- 푸터영역 -->
+  <footer>
+    <div class="f_up">
+    <address>
+      <p>개인정보처리방침 &#x007C; 이용약관</p>
+      <p>Copyright&copy; Fi-ar All Rights Reserverd.</p>
+      <p>FOLLOW Fi-ar SNS</p>  
+    </address>
+
+    <ul class="sns">
+        <li><i class="fa-brands fa-facebook"></i></li>
+        <li><i class="fa-brands fa-twitter"></i></li>
+        <li><i class="fa-brands fa-instagram"></i></li>
+    </ul>
+  </div>
+
+    
+
+    <ul class="f_bar">
+      <li><a href="main.html" title=""><i class="fas fa-house"></i><span>홈</span></a></li>
+      <li><a href="ing.html" title=""><i class="fas fa-calendar"></i><span>진행중 전시회</span></a></li>
+      <li><a href="price.html" title=""><i class="fas fa-ticket"></i><span>가격별 전시회</span></a></li>
+      <li><a href="location.html" title=""><i class="fas fa-location-dot"></i><span>내주변 전시회</span></a></li>
+    </ul>
+    
+  </footer>
+  
+  <script>
+     let s_02 = new Swiper('.s_02_slide',{
+      pagination : {
+        el:".swiper-pagination",
+        clickable: true,
+      }
+
+     });
+
+     $(function(){
+     let $ex = $('#ch');
+
+//1. 쿠키가 존재한다면 banner를 보이지 않게 한다
+if($.cookie('popup')=='none'){
+  $('.banner').hide();
+}
+
+//2. 사용자가 닫기 버튼을 클릭하면 popup함수를 호출하여 쿠키를 생성한다. 
+$('.banner i.fas').click(function(){
+  $.cookie('popup','none',{expires:1, path:'/'}); //쿠키파일 생성하고
+  $('.banner').slideUp(); //배너를 접어올린다.
+
+});
+});
+
+  </script>
+
+</div>
+</body>
+</html>

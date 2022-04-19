@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+*{margin: 0px; padding: 0px;}
+ol,ul,li{list-style: none;}
+a{text-decoration: none;}
+
+body{
+  width: 414px;
+  margin: 0px auto;
+}
+
+
+/* ------------------헤더 영역----------------------- */
+header{
+  height: 50px;
+  background-color: #980000;
+  position: relative;
+}
+
+header .h_bar{
+  position: absolute;
+  top: 12px; left: 10px;
+  color: #fff;
+  font-size: 25px;
+}
+
+header .h_user{
+  position: absolute;
+  top: 12px; right: 10px;
+  color: #fff;
+  font-size: 25px;
+}
+
+header h2{
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+  padding-top: 12px;
+}
+
+/* ------------------메인영역 ---------------------------- */
+
+.price{
+  height: 785px;
+
+}
+
+.price h2{
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 30px;
+  font-size: 25px;
+}
+.price > ul{
+  width: 414px;
+}
+.price > ul > li{
+  text-align: center;
+  background-color: rgb(65, 61, 61);
+  width: 310px;
+  height: 45px;
+  border-radius: 20px;
+  margin: 20px auto;
+  cursor: pointer;
+}
+
+.price > ul > li:hover{
+  background-color: #980000;
+  text-align: center;
+  width: 310px;
+  height: 45px;
+  border-radius: 20px;
+  margin: 20px auto;
+  cursor: pointer;
+}
+
+.price > ul > li > a{
+  display: block;
+  line-height: 45px;
+  color: #fff;
+  text-align: center;
+  font-size: 1em;
+  padding: 0px 40px;
+}
+
+
+/* ----------------푸터 영역 --------------------- */
+.f_bar{
+  height: 60px;
+  background-color: #292929;
+  display: flex; 
+  justify-content: space-around;
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+}
+
+.f_bar li{
+  color: #fff;
+  display: block;
+  text-align: center;
+  font-size: 25px;
+  padding-top: 5px;
+  list-style: none;
+}
+
+.f_bar li a{
+  text-decoration: none;
+  color:#fff;
+  height: 50px;
+}
+
+.f_bar li span{
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  padding-top: 7px;
+}
