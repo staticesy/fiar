@@ -24,12 +24,15 @@ header .fa-angle-left{
   font-size: 25px;
 }
 
-
-
 header h2{
-  color: #fff;
-  font-size: 22px;
   text-align: center;
+}
+
+header h2 a{
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  font-size: 22px;
   padding-top: 12px;
 }
 
